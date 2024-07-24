@@ -1,0 +1,22 @@
+
+/* HEADER STYLES */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 40vh;
+}
+header .background_square {
+	background-color: #34dbeb;
+	height: 66%;
+}
+
+header .background_triangle {
+/*	background-color: red;*/
+	border-top: 20vh solid #34dbeb;
+	border-right: 100vw solid transparent;
+	height: 34%;
+}
