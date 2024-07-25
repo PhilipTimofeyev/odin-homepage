@@ -6,15 +6,26 @@ body {
 	padding: 0;
 }
 
+header, main {
+	margin: 0 5%;
+}
+
 header {
 	height: 40vh;
 }
-header .background_square {
-	background-color: #34dbeb;
-	height: 60%;
+
+.background {
+	position: absolute;
+	top: 0;
 }
 
-header .background_triangle {
+.background_square {
+	background-color: #34dbeb;
+	height: 20vh;
+	width: 100vw;
+}
+
+.background_triangle {
 	border-top: 20vh solid #34dbeb;
 	border-right: 100vw solid transparent;
 	filter: drop-shadow(1px 6px 2px #e8e8e8);
@@ -22,42 +33,41 @@ header .background_triangle {
 
 header .container {
 	display: flex;
-	margin: 0 6%;
-	position: absolute;
-	top: 4%;
+	margin: 5% 0;
 }
 
-.container > img {
-	height: 420px;
-	object-fit: cover;
-	min-width: 380px;
+header .container > img {
 	box-shadow: rgba(0, 0, 0, .3) 5px 5px 15px;
+	height: 420px;
+	min-width: 380px;
+	object-fit: cover;
 	z-index: 3;
 }
 
 header .name {
-  z-index: 100;
-  position: absolute;
-  color: white;
+  color: #FFF;
   font-size: 2.2em;
-  left: 30px;
-  top: 340px;
+  left: 4.5em;
+  position: absolute;
+  top: 12.5em;
+  z-index: 100;
 }
 
 header .bio-cont {
 	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
 	box-sizing: border-box;
 	height: 100%;
 	margin: auto;
 	padding: 30px 30px 20px 30px;
 	width: 100%;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+	z-index: 2;
 }
 
 header .bio-links {
 	display: flex;
-	justify-content: flex-end;
 	gap: 20px;
+	justify-content: flex-end;
 	padding-top: 30px;
 }
 
@@ -69,3 +79,6 @@ header .bio-links {
 	height: 1.5em;
 	object-fit: contain;
 }
+
+/* BODY STYLES */
+
