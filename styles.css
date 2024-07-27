@@ -6,23 +6,20 @@ body {
 	padding: 0;
 }
 
-header, main {
+header, main, footer {
 	margin: 0 5%;
 }
 
-header {
-}
-
-.background {
+.background-top {
 	position: absolute;
-/*	height: 200px;*/
 	top: 0;
+	z-index: -1;
 }
 
 .background-square {
 	background-color: #34dbeb;
 	height: 20vh;
-	width: 100vw;
+	width: 100%;
 }
 
 .background-triangle {
@@ -44,7 +41,6 @@ header .container > img {
 	height: 420px;
 	min-width: 380px;
 	object-fit: cover;
-	z-index: 3;
 }
 
 .shadow {
@@ -52,12 +48,11 @@ header .container > img {
 }
 
 header .name {
-  color: #FFF;
+  color: #fff;
   font-size: 2.2em;
-  left: 4.5em;
+  left: 2.5em;
   position: absolute;
-  top: 12.5em;
-  z-index: 100;
+  top: 11em;
 }
 
 header .bio-cont {
@@ -67,7 +62,7 @@ header .bio-cont {
 	margin: auto;
 	padding: 30px 30px 20px 30px;
 	width: 100%;
-	z-index: 2;
+/*	z-index: 2;*/
 }
 
 header .bio-links {
@@ -87,6 +82,11 @@ header .bio-links {
 }
 
 /* MAIN STYLES */
+
+main {
+	margin-top: 4vh;
+	margin-bottom: 8vh;
+}
 
 main .cards-container {
 	display: grid;
@@ -140,5 +140,46 @@ main .bio-links a{
 
 .card-background p {
 	margin: 32px;
-/*	box-sizing: border-box;*/
 }
+
+
+/*FOOTER STYLES*/
+
+.background-bottom {
+	background-color: rgba(10, 145,	177);
+	height: 42vh;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+/*	background-color: black;*/
+	box-sizing: border-box;
+	padding: 20px;
+/*	margin-top: 7%;*/
+
+}
+
+footer .bio-links {
+	display: flex;
+	gap: 20px;
+}
+
+footer .bio-links img {
+	height: 2em;
+}
+
+footer p, 
+footer h2 {
+	color: #fff;
+}
+
+footer:last-child {
+	height: 480px;
+	min-width: 480px;
+}
+
+
