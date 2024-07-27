@@ -11,24 +11,28 @@ header, main {
 }
 
 header {
-	height: 40vh;
 }
 
 .background {
 	position: absolute;
+/*	height: 200px;*/
 	top: 0;
 }
 
-.background_square {
+.background-square {
 	background-color: #34dbeb;
 	height: 20vh;
 	width: 100vw;
 }
 
-.background_triangle {
+.background-triangle {
 	border-top: 20vh solid #34dbeb;
 	border-right: 100vw solid transparent;
 	filter: drop-shadow(1px 6px 2px #e8e8e8);
+}
+
+.bio-links a {
+	text-decoration: none;
 }
 
 header .container {
@@ -37,11 +41,14 @@ header .container {
 }
 
 header .container > img {
-	box-shadow: rgba(0, 0, 0, .3) 5px 5px 15px;
 	height: 420px;
 	min-width: 380px;
 	object-fit: cover;
 	z-index: 3;
+}
+
+.shadow {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
 }
 
 header .name {
@@ -55,7 +62,6 @@ header .name {
 
 header .bio-cont {
 	background-color: #fff;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
 	box-sizing: border-box;
 	height: 100%;
 	margin: auto;
@@ -80,5 +86,59 @@ header .bio-links {
 	object-fit: contain;
 }
 
-/* BODY STYLES */
+/* MAIN STYLES */
 
+main .cards-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 250px);
+	gap: 50px;
+}
+
+main .card {
+	display: flex;
+	flex-direction: column;
+	height: 320px;
+	width: 250px;
+}
+
+main .card-content {
+	margin: 10px 20px;
+}
+
+main .card img {
+	background-color: ;
+}
+
+main .project-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main .bio-links img {
+	height: 1.1em;
+	object-fit: contain;
+}
+
+main h4 {
+	margin: 0;
+}
+
+main .bio-links a{
+	margin: 0 4px;
+}
+
+.card-background {
+	align-content: center;
+	width: 100%;
+	height: 60%;
+	font-size: 2.5em;
+	color: #fff;
+	text-align: center;
+	text-wrap: wrap;
+}
+
+.card-background p {
+	margin: 40px;
+/*	box-sizing: border-box;*/
+}
