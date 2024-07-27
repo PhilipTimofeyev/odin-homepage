@@ -147,7 +147,7 @@ main .bio-links a{
 
 .background-bottom {
 	background-color: rgba(10, 145,	177);
-	height: 42vh;
+	height: 500px;
 	width: 100%;
 	position: absolute;
 	z-index: -1;
@@ -157,15 +157,14 @@ footer {
 	display: flex;
 	justify-content: space-between;
 /*	background-color: black;*/
-	box-sizing: border-box;
-	padding: 20px;
-/*	margin-top: 7%;*/
-
+	padding-top: 40px;
+	gap: 50px;
 }
 
 footer .bio-links {
 	display: flex;
 	gap: 20px;
+	margin-top: 20px;
 }
 
 footer .bio-links img {
@@ -173,13 +172,52 @@ footer .bio-links img {
 }
 
 footer p, 
-footer h2 {
+footer h2,
+address {
 	color: #fff;
 }
 
-footer:last-child {
-	height: 480px;
-	min-width: 480px;
+footer h2 {
+	font-size: 2.3em;
+	margin: 0;
+}
+
+footer p,
+address {
+	font-size: 1.2em;
+}
+
+footer .phone,
+footer .email {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+address {
+	margin-bottom: 25px;
+	font-style: normal
+}
+
+.phone p,
+.email p {
+	margin: 10px 0;
+}
+
+.phone img,
+.email img {
+	height: 1.7em;
+	filter: invert(1)
+}
+
+footer > img {
+	height: 410px;
+	width: 500px;
+	object-fit: cover;
+}
+
+hgroup > img {
+	height: 1.7em;
 }
 
 
