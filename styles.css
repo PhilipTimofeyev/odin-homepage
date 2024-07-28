@@ -4,6 +4,7 @@
 body {
 	margin: 0;
 	padding: 0;
+/*	font-size: 2em;*/
 }
 
 * {
@@ -76,7 +77,8 @@ header .profile-image > img {
   font-size: 2em;
   left: 1em;
   position: absolute;
-  top: 11em;
+  top: 10.7em;
+  font-family: "Playfair Display" ;
 }
 
 main hgroup p {
@@ -155,6 +157,10 @@ main .bio-links img {
 main h4,
 main h3 {
 	margin: 0;
+}
+
+main {
+	margin-bottom: 100px;
 }
 
 main .bio-links a{
@@ -239,6 +245,83 @@ footer > img {
 
 hgroup > img {
 	height: 1.7em;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1000px) {
+
+	body {
+		font-size: 1.3em;
+	}
+	
+	header, main, footer {
+		margin: 0 7%;
+	}
+
+	header .container {
+		display: inline-block;
+		margin-top: 150px;
+	}
+
+	header .profile-image > img {
+		height: 520px;
+		width: 460px;
+		position: relative;
+		float: left;
+		top: -100px;
+		left: -30px;
+	}
+
+	header .profile-image {
+	}
+
+	.name {
+		font-size: 2.6em;
+	}
+
+	main .card {
+		height: 450px;
+	}
+
+	.name {
+	  left: 280px;
+	  position: absolute;
+	  top: -130px;
+	}
+
+	main hgroup p {
+		color: rgba(100, 100, 100);
+	}
+
+	main {
+		margin-bottom: 300px;
+	}
+
+	header .bio-links {
+		display: none;
+	}
+
+	.background-bottom {
+		height: 700px;
+	}
+
+	footer {
+		padding-top: 120px;
+		height: 500px;
+	}
+
+	footer > img {
+		height: 560px;
+		width: 390px;
+		object-fit: cover;
+		position: relative;
+		top: -60px;
+	}
+
+
+
 }
 
 
